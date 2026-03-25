@@ -41,18 +41,13 @@ No pip packages required. The script uses only Python standard library modules.
 
 ## Getting Started
 
-1. Download or clone this repository.
-
-2. Run the script:
-
-```
-python ytdownloader.py
+1. Make sure you have Python installed.
+2. Download (or copy) the yt-dlp.py script to your computer, then run this script:
+```bash
+python yt-dlp.py
 ```
 
-3. On first launch, yt-dlp and ffmpeg will be downloaded automatically.
-   This only happens once. Subsequent launches start instantly.
-
-4. Use the menu to download video or audio.
+On the first launch, the script will automatically download yt-dlp and FFmpeg. This only happens once—future launches will start instantly.
 
 ---
 
