@@ -22,7 +22,7 @@ No installation required — just run the script and it handles everything else 
 All binaries (yt-dlp, ffmpeg, ffprobe) are downloaded silently on first run and stored in:
 
 ```
-%APPDATA%\ytdownloader\
+%APPDATA%\py-dlp\
 ```
 
 The folder is hidden automatically. Nothing is written to your system PATH.
@@ -78,7 +78,7 @@ On the first launch, the script will automatically download yt-dlp and FFmpeg. T
 
 ## Settings
 
-Settings are saved automatically to `%APPDATA%\ytdownloader\config.json`.
+Settings are saved automatically to `%APPDATA%\py-dlp\config.json`.
 
 | Key              | Description                                          |
 |------------------|------------------------------------------------------|
@@ -146,14 +146,14 @@ in Settings. YT Downloader will pull cookies directly from that browser's profil
 
 ```
 yt-downloader/
-├── ytdownloader.py       ← main script
+├── py-dlp.py       ← main script
 └── README.md             ← this file
 ```
 
 **Runtime (auto-created, hidden):**
 
 ```
-%APPDATA%\ytdownloader\
+%APPDATA%\py-dlp\
 ├── yt-dlp.exe
 ├── config.json
 └── bin\
@@ -177,7 +177,7 @@ Videos\
 ## Troubleshooting
 
 **Script opens and closes immediately**
-Run it from a terminal: `python ytdownloader.py` — do not double-click the `.py` file directly.
+Run it from a terminal: `python py-dlp.py` — do not double-click the `.py` file directly.
 
 **"python is not recognized"**
 Python is not installed or not on your PATH. Download from https://python.org and check **Add to PATH** during install.
@@ -189,7 +189,7 @@ The video may be age-restricted. Enable cookie support in Settings and make sure
 Chrome locks its cookie database while running. Close Chrome and retry.
 
 **ffmpeg merge fails / no audio in output**
-The binaries may be corrupted. Delete `%APPDATA%\ytdownloader\` and relaunch — setup will re-download everything cleanly.
+The binaries may be corrupted. Delete `%APPDATA%\py-dlp\` and relaunch — setup will re-download everything cleanly.
 
 **Subtitles not appearing**
 Not all videos have subtitles. Auto-generated captions may or may not be available depending on the channel. The download will succeed either way.
