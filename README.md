@@ -42,9 +42,9 @@ No pip packages required. The script uses only Python standard library modules.
 ## Getting Started
 
 1. Make sure you have Python installed.
-2. Download (or copy) the yt-dlp.py script to your computer, then run this script:
+2. Download (or copy) the py-dlp.py script to your computer, then run this script:
 ```bash
-python yt-dlp.py
+python py-dlp.py
 ```
 
 On the first launch, the script will automatically download yt-dlp and FFmpeg. This only happens once—future launches will start instantly.
